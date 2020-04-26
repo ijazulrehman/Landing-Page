@@ -1,4 +1,4 @@
-# Login Ui
+# Landing Page
 
 Clean, simple, minimal and modern landing page for App
 
