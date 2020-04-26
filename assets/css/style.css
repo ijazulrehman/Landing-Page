@@ -1,0 +1,366 @@
+/* Document
+   ========================================================================== */
+   @font-face {
+    font-family: Gilroy;
+    src: url("../fonts/Gilroy-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: bold;
+    src: url("../fonts/Gilroy-ExtraBold.otf") format("opentype");
+}
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+
+body {
+    background: #f2f3f5;
+    /* font-family: "colfax-medium", sans-serif; */
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    text-shadow: -1px -1px 0 rgba(242, 243, 245, 0.4), 1px -1px 0 rgba(242, 243, 245, 0.4), -1px 1px 0 rgba(242, 243, 245, 0.4), 1px 1px 0 rgba(242, 243, 245, 0.4);
+
+}
+
+.d-block{
+    display: block;
+}
+
+.d-flex {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.p-relative{
+  position: relative;
+}
+
+.logo{
+    text-decoration: none;
+    padding: 2em 0 1em;
+    display: block;
+}
+
+.logo img{
+    height: 5em;
+}
+
+  /* Scroll animation
+     ========================================================================== */
+     .scroll-downs {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        
+        width :34px;
+        height: 55px;
+      }
+      .mousey {
+        width: 3px;
+        padding: 10px 15px;
+        height: 35px;
+        border: 2px solid #000;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+      }
+      .scroller {
+        width: 3px;
+        height: 10px;
+        border-radius: 25%;
+        background-color: #000;
+        animation-name: scroll;
+        animation-duration: 2.2s;
+        animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+        animation-iteration-count: infinite;
+      }
+      @keyframes scroll {
+        0% { opacity: 0; }
+        10% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(15px); opacity: 0;}
+      }
+
+      .custom-overlay{
+        width: 100%;
+        height: 100vh;
+        z-index: 100000;
+        background: #f2f3f5;
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+      }
+
+/* express youself style =======================================*/
+.map-nav,
+.express-yourself,
+.discover,
+.download{
+    height: 100vh;
+    width: 100%;
+    position: relative; 
+
+}
+.snap-img{
+    min-width: 280px;
+    max-width: 25em;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.text-description{
+    position: absolute;
+    left: calc(50% - 150px);
+    width:250px;
+    max-width:100%;
+    text-align: left;
+    margin:auto;
+    padding: 1em;
+    z-index: 2;
+}
+
+.text-description h1,
+.discover-quote h1,
+.map-nav-quote h1{
+    /* font-size: 3rem; */
+    font-size: 2em;
+    margin: 0.67em 0 0.5em;
+    font-weight: 800;
+}
+
+.text-description h4,
+.discover-quote h4,
+.map-nav-quote h4{
+    margin: 0 0 0.5em;
+}
+
+/* Discover & Rate ===================================================*/
+.discover{
+    /* height:100%; */
+    /* width:100vw; */
+}
+
+.discover-quote,
+.map-nav-quote{
+    position: absolute;
+    left: 10%;
+    min-width:250px;
+    max-width:100%;
+    text-align: left;
+    margin:auto;
+    padding: 1em;
+    z-index: 2;
+}
+
+.mobile-mockup{
+    height: 100vh;
+}
+
+.mobile-mockup img{
+    width: 290px
+}
+
+.inspiration-img-wrapper{
+    position: relative;
+    max-width: 100%;
+    width: 300px;
+    height: 250px;
+    margin: auto;
+}
+
+.inspiration-img-wrapper .img-1{
+    position: absolute;
+    z-index:3;
+    width: 270px;
+    left: -60px;
+    bottom: -30px;
+}
+
+.inspiration-img-wrapper .img-2{
+    position: absolute;
+    z-index:2;
+    width: 240px;
+    left: 0px;
+    bottom: 0;
+}
+
+.inspiration-img-wrapper .img-3{
+    position: absolute;
+    z-index:1;
+    width: 200px;
+    left: 60px;
+    bottom: 0;
+}
+
+.rating-star{
+    position: absolute;
+    left: 50%;
+}
+
+.rating-star img{
+    width: 200px;
+}
+
+.rate-quote{
+    padding-right: 1em;
+    position: absolute;
+    left: 60%;
+    text-align: left;
+}
+
+/* Discover & Rate ===================================================*/
+.download-quote{
+    text-align: left;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.download-quote h1{
+    font-weight: 300;
+    margin: 0;
+}
+
+.download-links{
+    position: absolute;
+    top: 50%;
+    width: 260px;
+    left: calc(50% - 130px);
+}
+
+.download-links img{ 
+    max-width: 200px;
+}
+
+.social-links{
+    position: absolute;
+    width: 200px;
+    bottom: 10%;
+    left: calc(50% - 100px);
+    text-align: center;
+}
+
+.social-links a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.3em;
+}
+
+.social-links img{
+    width: 40px;
+}
+
+.tag-line{
+    font-style: italic;
+    font-weight: 300;
+}
+
+.copyright{
+    font-style: italic;
+    font-weight: 300;
+    opacity: 0.6;
+    font-size: 13px;
+}
+
+
+/* map nav ===================================================*/
+
+.map-nav-img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.map-nav-img img{
+    min-width: 280px;
+    max-width: 40em;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* mobile customization ===================================================*/
+@media only screen and (max-width: 480px) {
+    /* your CSS here */
+    .inspiration-img-wrapper{
+        max-width: 100%;
+        width: 300px;
+    }
+    
+    .inspiration-img-wrapper .img-1{
+        width: 270px;
+        left: 0px;
+        bottom: -30px;
+    }
+    
+    .inspiration-img-wrapper .img-2{
+        width: 240px;
+        left: 60px;
+        bottom: 0;
+    }
+    
+    .inspiration-img-wrapper .img-3{
+        width: 200px;
+        left: 120px;
+        bottom: 0;
+    }
+
+    .rating-star{
+        left: 42%;
+    }
+
+    .rate-quote{        
+        left: 50%;
+    }
+    
+}
